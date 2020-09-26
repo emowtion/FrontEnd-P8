@@ -7,6 +7,7 @@ const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');
 
+
 fetch(urlAPI)
     .then(res => res.json())
     .then(res => res.results)
@@ -17,6 +18,7 @@ function displayEmployees(employeeData) {
     employees = employeeData;
     // store employee HTML
     let employeeHTML = '';
+
 
     // loop through each employee
     employees.forEach((employee, index) => {

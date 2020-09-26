@@ -26,7 +26,7 @@ function displayEmployees(employeeData) {
         let picture = employee.picture;
 
         employeeHTML += `
-            <div class="card" data-index="${index}>
+            <div class="card" data-index="${index}">
                 <img class="avatar" src="${picture.large}">
                 <div class="text-container">
                     <h2 class="name">${name.first} ${name.last}</h2>
@@ -63,7 +63,7 @@ function displayModal(index) {
         <p class="address">${city}</p>
         <hr />
         <p>${phone}</p>
-        <p class="address">${street}, ${state} ${postcode}</p>
+        <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
         <p>Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
     `;
@@ -75,7 +75,6 @@ gridContainer.addEventListener('click', e => {
     if (e.target !== gridContainer) {
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-
         displayModal(index);
     }
 });

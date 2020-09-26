@@ -1,4 +1,4 @@
-/* general layout */ 
+/* general layout */
 * {
     box-sizing: border-box;
 }
@@ -7,17 +7,21 @@ body {
     position: relative;
     margin: 0 auto;
     max-width: 50%;
-   
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
 }
 
 .grid-container {
     display: flex;
     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     padding-top: 100px;
-     max-width: 1200px;
-     margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .card {
@@ -55,6 +59,7 @@ body {
     margin: 20px auto 0;
     color: #000;
 }
+
 .overlay {
     position: absolute;
     top: 0;
